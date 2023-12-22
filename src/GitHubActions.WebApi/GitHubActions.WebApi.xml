@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GitHubActions.WebApi</name>
+    </assembly>
+    <members>
+        <member name="T:GitHubActions.WebApi.Controllers.StatusController">
+            <summary>
+            Sample controller for Clean Architecture
+            </summary>
+        </member>
+        <member name="M:GitHubActions.WebApi.Controllers.StatusController.#ctor(Microsoft.Extensions.Logging.ILogger{GitHubActions.WebApi.Controllers.StatusController},GitHubActions.Application.Interfaces.IStatusService)">
+            <summary>
+            This constructor initializes a new CleanArchitectureController using a <paramref name="logger"/> and <paramref name="statusService"/>
+            </summary>
+            <param name="logger">The <see cref="T:Microsoft.Extensions.Logging.ILogger"/> instance</param>
+            <param name="statusService">The <see cref="T:GitHubActions.Application.Interfaces.IStatusService"/> instance</param>
+        </member>
+        <member name="M:GitHubActions.WebApi.Controllers.StatusController.Get">
+            <summary>
+            Get the status of the service
+            </summary>
+            <returns>The service <see cref="T:GitHubActions.Application.Dtos.StatusResponse"/></returns>
+        </member>
+    </members>
+</doc>
